@@ -224,6 +224,15 @@ const tools = [
     tags: ['mock', 'json', 'generator', 'api', 'testing']
   },
   {
+    id: 'api-code-generator',
+    title: 'API Code Generator',
+    description: 'Generate ready-to-use API request code snippets in 10+ programming languages. Includes authentication, error handling, and TypeScript support. Free online tool for developers.',
+    icon: <FiTerminal />,
+    category: 'Developer',
+    popularity: 'high',
+    tags: ['api', 'code', 'generator', 'http', 'request', 'snippets']
+  },
+  {
     id: 'lorem-ipsum',
     title: 'Lorem Ipsum Generator',
     description: 'Generate placeholder text for design and development projects',

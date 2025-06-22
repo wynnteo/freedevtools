@@ -5,21 +5,21 @@ import Script from 'next/script'
 import { FaGithub, FaBlog, FaHeart, FaEnvelope, FaExternalLinkAlt } from 'react-icons/fa'
 
 export const metadata: Metadata = {
-  title: 'Free Developer Tools - Free Online Developer & Writer Tools',
+  title: 'Free Developer Tools Online - No Signup',
   description: 'Free Developer Tools offers free, fast, and easy-to-use online tools for developers and writers. Simplify your workflow with text manipulation, code formatting, and more!',
-  keywords: ['text tools', 'developer tools', 'writer tools', 'online utilities', 'regex tester', 'json formatter', 'markdown previewer'],
+  keywords: ['text tools', 'developer tools', 'writer tools', 'online utilities', 'regex tester', 'free online JSON formatter', 'best base64 encoder for developers', 'free online tools', 'text manipulation', 'code formatting', 'mock JSON generator', 'password generator', 'QR code generator', 'free online tools for developers', 'free online tools for writers'],
   authors: [{ name: 'Wynn Teo', url: 'https://wynntech.me' }],
   verification: {
     google: 'AyiXu4Zv1SkT9i3IbOTb11aIpLXEm-8MS2gS7Ey6W_M',
   },
   openGraph: {
-    title: 'Free Developer Tools - Free Online Developer & Writer Tools',
+    title: 'Free Developer Tools Online - No Signup',
     description: 'Free Developer Tools offers free, fast, and easy-to-use online tools for developers and writers. Simplify your workflow with text manipulation, code formatting, and more!',
     url: 'https://wynntech.me',
     siteName: 'Free Developer Tools',
     images: [
       {
-        url: 'https://yourwebsite.com/og-image.png', 
+        url: 'https://freedevtools.dev/og-image.png', 
         width: 1200,
         height: 630,
       },
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free Developer Tools - Free Online Developer & Writer Tools',
     description: 'Free Developer Tools offers free, fast, and easy-to-use online tools for developers and writers. Simplify your workflow with text manipulation, code formatting, and more!',
-    images: ['https://yourwebsite.com/og-image.png'],
+    images: ['https://freedevtools.dev/og-image.png'],
   },
 };
 

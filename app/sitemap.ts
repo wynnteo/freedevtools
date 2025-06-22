@@ -31,6 +31,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   'color-converter',
   'password-generator',
   'mock-json-generator',
+  'api-code-generator',
   'bcrypt-tool',
   'lorem-ipsum',
 ];

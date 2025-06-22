@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import { FiType, FiArrowRight, FiSearch, FiHash, FiCode, FiSmartphone, FiKey, FiClock } from 'react-icons/fi';
+import { FiType,FiTerminal, FiArrowRight, FiSearch, FiHash, FiCode, FiSmartphone, FiKey, FiClock } from 'react-icons/fi';
 
 const tools = [
   {
@@ -44,6 +44,15 @@ const tools = [
     popularity: 'high',
     tags: ['mock', 'json', 'generator', 'api', 'testing']
   },
+  {
+      id: 'api-code-generator',
+      title: 'API Code Generator',
+      description: 'Generate ready-to-use API request code snippets in 10+ programming languages. Includes authentication, error handling, and TypeScript support. Free online tool for developers.',
+      icon: <FiTerminal />,
+      category: 'Developer',
+      popularity: 'high',
+      tags: ['api', 'code', 'generator', 'http', 'request', 'snippets']
+    },
   {
     id: 'password-generator',
     title: 'Password Generator',
@@ -128,24 +137,86 @@ export default function Home() {
             </Link>
           ))}
         </div>
-       {/* Stats Section */}
-        <div className="text-center mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8">Why Choose Our Tools?</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-indigo-600 mb-2">25+</div>
-              <div className="text-gray-900 font-medium">Free Tools</div>
-              <div className="text-sm text-gray-500 mt-1">Always expanding</div>
+        {/* Enhanced Stats Section - Focus on Developer Pain Points */}
+        <div className="text-center mb-16 py-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600">
+              Why Developers Choose Us
+            </span>
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto mb-10 px-4">
+            Tools built by developers, for developers - no fluff, just results
+          </p>
+
+          <div className="grid md:grid-cols-4 gap-6 max-w-8xl mx-auto px-4">
+            {/* Tool Count - Emphasize curation */}
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all">
+              <div className="inline-flex items-center justify-center w-14 h-14 bg-indigo-100 text-indigo-600 rounded-full mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              </div>
+              <div className="text-3xl font-bold text-gray-900 mb-1">
+                24<span className="text-indigo-600">+</span>
+              </div>
+              <div className="text-gray-900 font-medium">Handpicked Tools</div>
+              <div className="text-sm text-gray-500 mt-1">
+                <span className="inline-flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-green-500 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Zero bloat, pure utility
+                </span>
+              </div>
             </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-green-600 mb-2">100%</div>
-              <div className="text-gray-900 font-medium">Privacy Protected</div>
-              <div className="text-sm text-gray-500 mt-1">No data collection</div>
+
+            {/* Privacy - Technical explanation */}
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all">
+              <div className="inline-flex items-center justify-center w-14 h-14 bg-green-100 text-green-600 rounded-full mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
+                </svg>
+              </div>
+              <div className="text-3xl font-bold text-gray-900 mb-1">
+                100<span className="text-green-600">%</span>
+              </div>
+              <div className="text-gray-900 font-medium">Client-Side Processing</div>
+              <div className="text-sm text-gray-500 mt-1">
+                Data never leaves your browser
+              </div>
             </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-purple-600 mb-2">0</div>
-              <div className="text-gray-900 font-medium">Registration Required</div>
-              <div className="text-sm text-gray-500 mt-1">Just open and use</div>
+
+            {/* Zero Registration - Add value prop */}
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all">
+              <div className="inline-flex items-center justify-center w-14 h-14 bg-purple-100 text-purple-600 rounded-full mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                  <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
+                </svg>
+              </div>
+              <div className="text-3xl font-bold text-gray-900 mb-1">
+                <span className="text-purple-600">0</span>
+              </div>
+              <div className="text-gray-900 font-medium">Account Needed</div>
+              <div className="text-sm text-gray-500 mt-1">
+                Start working in 3 seconds
+              </div>
+            </div>
+
+            {/* New Metric - Performance focus */}
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all">
+              <div className="inline-flex items-center justify-center w-14 h-14 bg-amber-100 text-amber-600 rounded-full mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clipRule="evenodd" />
+                </svg>
+              </div>
+              <div className="text-3xl font-bold text-gray-900 mb-1">
+                &lt;100<span className="text-amber-600">ms</span>
+              </div>
+              <div className="text-gray-900 font-medium">Tool Load Time</div>
+              <div className="text-sm text-gray-500 mt-1">
+                Optimized for developer workflow
+              </div>
             </div>
           </div>
         </div>
