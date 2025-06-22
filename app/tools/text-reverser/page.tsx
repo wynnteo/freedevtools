@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import TextReverserClient from './TextReverserClient';
 
-// ✅ This works because this is a SERVER component
 export const metadata: Metadata = {
   title: 'Free Text Reverser - Reverse Text, Words & Lines Online | Free Developer Tools',
   description: 'Reverse text, words, or lines instantly with our free online text reverser tool. Perfect for creative writing, text manipulation, and coding puzzles with customizable options.',

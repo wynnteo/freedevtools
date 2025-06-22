@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import { FiType,FiTerminal, FiArrowRight, FiSearch, FiHash, FiCode, FiSmartphone, FiKey, FiClock } from 'react-icons/fi';
+import { FiType,FiTerminal, FiFile, FiArrowRight, FiSearch, FiHash, FiCode, FiSmartphone, FiKey, FiClock } from 'react-icons/fi';
 
 const tools = [
   {
@@ -17,7 +17,7 @@ const tools = [
     description: 'Count words, characters, paragraphs, and reading time for any text',
     icon: <FiHash />,
     category: 'Text Tools',
-    popularity: 'high'
+    popularity: 'medium'
   },
   {
     id: 'find-replace',
@@ -43,6 +43,15 @@ const tools = [
     category: 'Generators',
     popularity: 'high',
     tags: ['mock', 'json', 'generator', 'api', 'testing']
+  },
+  {
+    id: 'env-properties-parser',
+    title: '.env & Properties Parser',
+    description: 'Parse and convert .env files and Java properties files between JSON, YAML, and key-value formats',
+    icon: <FiFile />,
+    category: 'Developer',
+    popularity: 'high',
+    tags: ['env', 'properties', 'parser', 'json', 'yaml', 'key-value', 'dotenv', 'config']
   },
   {
       id: 'api-code-generator',
@@ -157,7 +166,7 @@ export default function Home() {
                 </svg>
               </div>
               <div className="text-3xl font-bold text-gray-900 mb-1">
-                24<span className="text-indigo-600">+</span>
+                25<span className="text-indigo-600">+</span>
               </div>
               <div className="text-gray-900 font-medium">Handpicked Tools</div>
               <div className="text-sm text-gray-500 mt-1">

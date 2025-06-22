@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import SlugConverterClient from './SlugConverterClient';
 
-// ✅ This works because this is a SERVER component
 export const metadata: Metadata = {
   title: 'Free Slug Converter - Create SEO-Friendly URL Slugs Online | Free Developer Tools',
   description: 'Convert text to SEO-friendly URL slugs instantly with our free online slug converter. Handle special characters, choose separators, and create perfect URLs for your content.',

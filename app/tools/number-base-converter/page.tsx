@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import NumberBaseConverterClient from './NumberBaseConverterClient';
 
-// ✅ This works because this is a SERVER component
 export const metadata: Metadata = {
   title: 'Free Number Base Converter - Binary, Hex, Octal, Decimal Online | Free Developer Tools',
   description: 'Convert numbers between different bases instantly. Free online tool for binary, decimal, hexadecimal, octal conversions. Perfect for programming and math calculations.',

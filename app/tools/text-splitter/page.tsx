@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import TextSplitterClient from './TextSplitterClient';
 
-// ✅ This works because this is a SERVER component
 export const metadata: Metadata = {
   title: 'Free Text Splitter - Split Text by Delimiter, Lines & Words | Free Developer Tools',
   description: 'Split text into parts using custom delimiters, lines, words, or characters. Perfect for data processing, CSV handling, and text analysis with customizable options.',

@@ -35,6 +35,7 @@ A comprehensive collection of free, privacy-focused online tools for text manipu
 - **JSON Formatter** - Format, validate, and beautify JSON with syntax highlighting
 - **CSV Formatter** - Format, validate, and convert CSV data with custom delimiters and options
 - **CSS Formatter** - Format, minify, and validate CSS code with syntax highlighting
+- **ENV & Properties Parser** - Parse .env files or Java properties files between JSON, YAML, and key-value formats
 - **Regex Tester** - Test regular expressions with real-time matching
 - **Text Diff Checker** - Compare texts and highlight differences
 - **Number Base Converter** - Convert between binary, decimal, hex, octal
@@ -46,6 +47,7 @@ A comprehensive collection of free, privacy-focused online tools for text manipu
 - **Color Converter** - Convert between HEX, RGB, HSL, and other formats
 - **Password Generator** - Generate secure passwords with custom options
 - **Mock JSON Generator** - Generate realistic mock JSON data from schemas instantly
+- **API Code Generator** - Generate ready-to-use API request code snippets in 10+ programming languages
 - **Bcrypt Hash Generator** - Generate secure password hashes
 - **Lorem Ipsum Generator** - Create placeholder text for designs
 

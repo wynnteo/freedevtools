@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import PasswordGeneratorClient from './PasswordGeneratorClient';
 
-// ✅ This works because this is a SERVER component
 export const metadata: Metadata = {
   title: 'Free Password Generator - Create Secure Random Passwords | Free Developer Tools',
   description: 'Generate strong, secure passwords instantly with our free online password generator. Customize length, character sets, and create uncrackable passwords for maximum security.',

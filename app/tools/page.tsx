@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Metadata } from 'next';
-import { FiMinimize, FiCalendar, FiTerminal, FiShuffle, FiColumns, FiType, FiArrowRight, FiLink, FiSearch, FiHash, FiLock, FiClock,FiScissors, FiCode, FiGitMerge, FiSmartphone, FiDroplet, FiKey, FiAlignLeft, FiShield, FiFilter } from 'react-icons/fi';
+import { FiMinimize, FiCalendar,FiFile, FiTerminal, FiShuffle, FiColumns, FiType, FiArrowRight, FiLink, FiSearch, FiHash, FiLock, FiClock,FiScissors, FiCode, FiGitMerge, FiSmartphone, FiDroplet, FiKey, FiAlignLeft, FiShield, FiFilter } from 'react-icons/fi';
 
 export const metadata: Metadata = {
   title: 'Free Developer Tools Directory - Text & Developer Utilities | Free Developer Tools',
@@ -16,7 +16,7 @@ const tools = [
     description: 'Convert text between different cases: uppercase, lowercase, title case, camel case, and more',
     icon: <FiType />,
     category: 'Text Tools',
-    popularity: 'high', // Keep - universal need
+    popularity: 'high',
     tags: ['text', 'case', 'uppercase', 'lowercase', 'conversion']
   },
   {
@@ -34,7 +34,7 @@ const tools = [
     description: 'Convert text to URL-friendly slugs for web development and SEO',
     icon: <FiLink />,
     category: 'Text Tools',
-    popularity: 'medium', // Demoted - more specialized
+    popularity: 'medium',
     tags: ['slug', 'url', 'seo', 'web', 'friendly']
   },
   {
@@ -43,7 +43,7 @@ const tools = [
     description: 'Find and replace text with support for regex patterns and bulk operations',
     icon: <FiSearch />,
     category: 'Text Tools',
-    popularity: 'high', // Promoted - broad appeal for content creators
+    popularity: 'high',
     tags: ['find', 'replace', 'search', 'regex', 'bulk']
   },
   {
@@ -52,7 +52,7 @@ const tools = [
     description: 'Count words, characters, paragraphs, and reading time for any text',
     icon: <FiHash />,
     category: 'Text Tools',
-    popularity: 'high', // Keep - writers, students, professionals use daily
+    popularity: 'medium',
     tags: ['count', 'words', 'characters', 'reading', 'statistics']
   },
   {
@@ -61,7 +61,7 @@ const tools = [
     description: 'Split text into parts using custom delimiters, lines, words, or characters',
     icon: <FiScissors />,
     category: 'Text Tools',
-    popularity: 'medium', // Keep as medium for now
+    popularity: 'medium',
     tags: ['split', 'text', 'delimiter', 'lines', 'words', 'characters']
   },
   {
@@ -81,7 +81,7 @@ const tools = [
     description: 'Encode and decode Base64 strings with support for files and images',
     icon: <FiLock />,
     category: 'Encoding',
-    popularity: 'medium', // Demoted - more niche developer tool
+    popularity: 'medium',
     tags: ['base64', 'encode', 'decode', 'encryption']
   },
   {
@@ -112,6 +112,15 @@ const tools = [
     category: 'Developer',
     popularity: 'high', 
     tags: ['json', 'format', 'validate', 'beautify', 'syntax']
+  },
+  {
+    id: 'env-properties-parser',
+    title: '.env & Properties Parser',
+    description: 'Parse and convert .env files and Java properties files between JSON, YAML, and key-value formats',
+    icon: <FiFile />,
+    category: 'Developer',
+    popularity: 'high',
+    tags: ['env', 'properties', 'parser', 'json', 'yaml', 'key-value', 'dotenv', 'config']
   },
   {
     id: 'css-formatter',
@@ -184,7 +193,7 @@ const tools = [
     description: 'Generate QR codes for URLs, text, WiFi, and more with customization options',
     icon: <FiSmartphone />,
     category: 'Generators',
-    popularity: 'high', // Keep - high demand, mobile-friendly
+    popularity: 'high',
     tags: ['qr', 'code', 'generator', 'url', 'wifi']
   },
   {
@@ -202,7 +211,7 @@ const tools = [
     description: 'Generate secure, random passwords with customizable length and character sets',
     icon: <FiKey />,
     category: 'Generators',
-    popularity: 'high', // Keep - security is always high priority
+    popularity: 'high',
     tags: ['password', 'generate', 'secure', 'random', 'strong']
   },
   {
