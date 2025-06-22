@@ -64,7 +64,7 @@ A comprehensive collection of free, privacy-focused online tools for text manipu
 git clone https://github.com/wynnteo/freedevtools.git
 
 # Navigate to project directory
-cd text-tools-hub
+cd freedevtools
 
 # Install dependencies
 npm install
